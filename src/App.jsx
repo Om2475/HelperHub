@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
@@ -17,7 +16,7 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/profile" element={<ProfilePage />} />
-           <Route path="/edit-profile" element={<ProfilePage />} />
+          <Route path="/edit-profile" element={<ProfilePage />} />
           <Route path="/service/:serviceType" element={<ProfilePage />} />
           <Route path="/service-providers/:serviceType" element={<ServiceProvidersPage />} />
         </Routes>
