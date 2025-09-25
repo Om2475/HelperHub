@@ -1,14 +1,94 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { getDatabase, ref, get, query, orderByChild, equalTo } from 'firebase/database';
+import { getDatabase, ref, get, set, update, onValue } from 'firebase/database';
 import UserProfile from './UserProfile';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
+  // Profile menu state
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const [accountInfo, setAccountInfo] = useState({ name: '', email: '' });
+  // Fetch account info for profile dropdown
+  useEffect(() => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (user) {
+      setAccountInfo({
+        name: user.displayName || 'User',
+        email: user.email || '',
+      });
+    } else {
+      setAccountInfo({ name: '', email: '' });
+    }
+  }, [showProfileMenu]);
   const location = useLocation();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('request');
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('darkMode') === 'true';
+    }
+    return false;
+  });
+  const [showNotifications, setShowNotifications] = useState(false);
+  const [notifications, setNotifications] = useState([]);
+  // Fetch notifications from Firebase for the current user
+  useEffect(() => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (!user) return;
+    const db = getDatabase();
+    const notifRef = ref(db, `notifications/${user.uid}`);
+    // Listen for real-time updates
+    const unsubscribe = onValue(notifRef, (snapshot) => {
+      const notifs = [];
+      snapshot.forEach(child => {
+        notifs.push({ id: child.key, ...child.val() });
+      });
+      // Sort by createdAt descending
+      notifs.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+      setNotifications(notifs);
+    });
+    return () => unsubscribe();
+  }, []);
+  const bellRef = useRef();
+
+  // Close dropdown on outside click and mark notifications as read
+  useEffect(() => {
+    function handleClick(e) {
+      if (bellRef.current && !bellRef.current.contains(e.target)) {
+        setShowNotifications(false);
+      }
+    }
+    if (showNotifications) {
+      document.addEventListener('mousedown', handleClick);
+      // Mark all notifications as read when dropdown is opened
+      const auth = getAuth();
+      const user = auth.currentUser;
+      if (user && notifications.some(n => n.unread)) {
+        const db = getDatabase();
+        const notifRef = ref(db, `notifications/${user.uid}`);
+        notifications.forEach(n => {
+          if (n.unread) {
+            update(ref(db, `notifications/${user.uid}/${n.id}`), { unread: false });
+          }
+        });
+      }
+    } else {
+      document.removeEventListener('mousedown', handleClick);
+    }
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [showNotifications, notifications]);
+  // Dark mode effect
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark-mode');
+    } else {
+      document.documentElement.classList.remove('dark-mode');
+    }
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
   const [currentImage, setCurrentImage] = useState(0);
   const [userType, setUserType] = useState('employer'); // Default value
   const [isLoading, setIsLoading] = useState(true);
@@ -16,11 +96,8 @@ const HomePage = () => {
   const [sentRequests, setSentRequests] = useState([]);
   
   // Images for the changing banner
-  const bannerImages = [
-    '/images/poster1.jpg',
-    '/images/poster2.jpg',
-    '/images/poster3.jpg'
-  ];
+  // Images for the changing banner (deprecated) - using CSS hero illustrations now
+  const bannerImages = [];
 
   // Placeholder data for team members
   const teamMembers = [
@@ -30,7 +107,8 @@ const HomePage = () => {
 
   // Handle clicking on the banner to change image
   const handleBannerClick = () => {
-    setCurrentImage((prevImage) => (prevImage + 1) % bannerImages.length);
+    // preserve previous behavior: cycle through visual states
+    setCurrentImage((prevImage) => (prevImage + 1) % 3);
   };
 
   // Change banner image automatically
@@ -175,7 +253,66 @@ const HomePage = () => {
     <div className="home-container">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">HelperHub</div>
+  <div className="logo">HelperHub</div>
+  <div style={{display:'flex',alignItems:'center',gap:'1.2rem',marginLeft:'auto'}}>
+          {/* Dark mode toggle with SVG icon */}
+          <button
+            className="dark-toggle"
+            aria-label="Toggle dark mode"
+            onClick={() => setDarkMode((d) => !d)}
+          >
+            {darkMode ? (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+            ) : (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95 6.95-1.41-1.41M6.34 6.34 4.93 4.93m12.02 0-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
+            )}
+          </button>
+          {/* Notifications bell with SVG icon */}
+          <div className="notif-bell-wrapper" ref={bellRef}>
+            <button
+              className="notif-bell"
+              aria-label="Notifications"
+              onClick={() => setShowNotifications((v) => !v)}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              {notifications.some(n => n.unread) && (
+                <span className="notif-badge">{notifications.filter(n => n.unread).length}</span>
+              )}
+            </button>
+            {showNotifications && (
+              <div className="notif-dropdown">
+                <div className="notif-dropdown-title">Notifications</div>
+                {notifications.length === 0 ? (
+                  <div className="notif-empty">No notifications</div>
+                ) : (
+                  notifications.map(n => (
+                    <div key={n.id} className={`notif-item${n.unread ? ' unread' : ''}`}>{n.text}</div>
+                  ))
+                )}
+              </div>
+            )}
+          </div>
+          {/* Profile avatar and dropdown */}
+          <div className="profile-menu-wrapper">
+            <button className="profile-avatar" aria-label="Profile Menu" onClick={() => setShowProfileMenu((v) => !v)}>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M21 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/></svg>
+            </button>
+            {showProfileMenu && (
+              <div className="profile-dropdown">
+                <div className="profile-dropdown-title">Account</div>
+                <div className="profile-account-info">
+                  <div className="profile-account-name">{accountInfo.name}</div>
+                  <div className="profile-account-email">{accountInfo.email}</div>
+                </div>
+                <button className="profile-link" onClick={()=>navigate('/dashboard')}>Dashboard</button>
+                <button className="profile-link" onClick={()=>navigate('/applications')}>My Applications</button>
+                <button className="profile-link" onClick={()=>navigate('/saved')}>Saved Jobs</button>
+                <button className="profile-link" onClick={()=>navigate('/settings')}>Settings</button>
+                <button className="profile-link logout" onClick={()=>{localStorage.clear();navigate('/')}}>Logout</button>
+              </div>
+            )}
+          </div>
+    </div>
         <div className="nav-tabs">
           <button 
             className={`nav-tab ${activeTab === 'request' ? 'active' : ''}`}
@@ -191,8 +328,7 @@ const HomePage = () => {
           </button>
         </div>
         
-        {/* Using the new UserProfile component */}
-        <UserProfile userType={userType} />
+  {/* Removed left-side My Account/UserProfile button as requested */}
       </nav>
       
       {/* Main content */}
@@ -202,16 +338,19 @@ const HomePage = () => {
           {userType === 'employer' ? 'Employer' : 'Job Seeker'}
         </div>
         
-        {/* Banner Image with Slogan Overlay */}
-        <div className="banner-container" onClick={handleBannerClick}>
-          <img 
-            src={bannerImages[currentImage]} 
-            alt="HelperHub Banner" 
-            className="banner-image"
+        {/* Hero banner: CSS/SVG driven, no watermarked images */}
+        <div className={`banner-container hero-variant-${currentImage}`} onClick={handleBannerClick}>
+          <div
+            className="banner-illustration"
+            aria-hidden="true"
           />
           <div className="banner-slogan">
             <h1>Connecting People, Creating Opportunities</h1>
             <p>Find the right help or offer your services with HelperHub</p>
+            <div className="hero-ctas">
+              <button className="cta-primary" onClick={() => navigate('/get-started')}>Get Started</button>
+              <button className="cta-secondary" onClick={() => navigate('/get-started')}>Learn More</button>
+            </div>
           </div>
         </div>
         

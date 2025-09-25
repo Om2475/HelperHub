@@ -245,6 +245,11 @@ const UserProfile = ({ userType }) => {
             </button>
           )}
           
+          {/* Settings Button for all users */}
+          <button className="settings-button" onClick={() => navigate('/settings')}>
+            Settings
+          </button>
+          
           {/* Conditional Business Info Button for Employers */}
           {userType === 'employer' && (
             <button 
