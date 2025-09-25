@@ -1,3 +1,7 @@
+/* Hide the team section */
+.team-section {
+  display: none !important;
+}
 /* styles/HomePage.css */
 .home-container {
     display: flex;

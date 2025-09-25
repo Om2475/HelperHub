@@ -21,4 +21,16 @@ This project was built as part of my IT Engineering studies at Vishwakarma Insti
 ## Prerequisites
 - Node.js (version 14+)
 - npm (comes with Node.js)
+<<<<<<< HEAD
 - A Firebase project (set up Authentication, Realtime Database, and Storage)
+
+
+
+
+  
+
+
+
+=======
+- A Firebase project (set up Authentication, Realtime Database, and Storage)
+>>>>>>> f2d65a0 (Add env, Firebase setup, and update app files)

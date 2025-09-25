@@ -219,27 +219,11 @@ const HomePage = () => {
         <div className="services-section">
           <h2>Our Services</h2>
           <div className="service-cards">
-            <div className="service-card" onClick={() => handleServiceClick('house')}>
-              <div className="card-image">
-                <img src="/images/house-service.avif" alt="House Service" />
-              </div>
-              <h3>House Service</h3>
-              <button className="apply-button">Apply</button>
-            </div>
-            
             <div className="service-card" onClick={() => handleServiceClick('short-term')}>
               <div className="card-image">
                 <img src="/images/short-term.jpg" alt="Short Term Service" />
               </div>
               <h3>Short Term Service</h3>
-              <button className="apply-button">Apply</button>
-            </div>
-            
-            <div className="service-card" onClick={() => handleServiceClick('business')}>
-              <div className="card-image">
-                <img src="/images/business.webp" alt="Business Helper" />
-              </div>
-              <h3>Business Helper</h3>
               <button className="apply-button">Apply</button>
             </div>
           </div>

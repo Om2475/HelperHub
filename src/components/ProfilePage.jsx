@@ -5,7 +5,7 @@ import { ref as dbRef, get, set, update } from 'firebase/database';
 import { ref as storageRef, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { onAuthStateChanged } from 'firebase/auth';
 import '../styles/ProfilePage.css';
-import { FaArrowLeft, FaUser, FaBroom, FaBaby, FaHospital, FaUtensils, FaDog, FaHome, FaTools } from 'react-icons/fa';
+import { FaArrowLeft, FaUser, FaBolt } from 'react-icons/fa';
 
 const ProfilePage = () => {
   const navigate = useNavigate();
@@ -31,22 +31,30 @@ const ProfilePage = () => {
   const [success, setSuccess] = useState('');
   const [imageFile, setImageFile] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // Sub-services and charges
+  const subServicesList = [
+    'Fan Install',
+    'Switch Board',
+    'DB Install',
+    'MCB Install',
+    'TV Fitting',
+    'Full House Wiring',
+    'Diwali Lighting',
+    'Ganesh Pandal Wiring'
+  ];
 
-  // House help categories with icons
+  // Store selected sub-services and charges in profile
+  // profile.selectedSubServices: [{ name, charge }]
+
+  // Only Electrician service with icon
   const categories = [
-    { id: 'maid', name: 'Maid/Housekeeping', icon: <FaBroom /> },
-    { id: 'babysitter', name: 'Babysitter', icon: <FaBaby /> },
-    { id: 'caregiver', name: 'Elderly Caregiver', icon: <FaHospital /> },
-    { id: 'cook', name: 'Cook', icon: <FaUtensils /> },
-    { id: 'petcare', name: 'Pet Caretaker', icon: <FaDog /> },
-    { id: 'gardener', name: 'Gardener', icon: <FaHome /> },
-    { id: 'handyman', name: 'Handyman', icon: <FaTools /> }
+    { id: 'electrician', name: 'Electrician', icon: <FaBolt /> }
   ];
 
   const experienceLevels = [
-    { id: 'beginner', name: 'Beginner (0-1 years)' },
-    { id: 'intermediate', name: 'Intermediate (1-3 years)' },
-    { id: 'expert', name: 'Expert (3+ years)' }
+    { id: 'beginner', name: 'Beginner (0-3 years)' },
+    { id: 'intermediate', name: 'Intermediate (4-6 years)' },
+    { id: 'expert', name: 'Expert (6+ years)' }
   ];
 
   useEffect(() => {
@@ -128,6 +136,36 @@ const ProfilePage = () => {
     setProfile(prev => ({
       ...prev,
       experienceLevel: levelId
+    }));
+  };
+
+  // Toggle sub-service selection
+  const handleSubServiceToggle = (subName) => {
+    setProfile(prev => {
+      const selected = prev.selectedSubServices || [];
+      if (selected.some(s => s.name === subName)) {
+        // Remove
+        return {
+          ...prev,
+          selectedSubServices: selected.filter(s => s.name !== subName)
+        };
+      } else {
+        // Add with empty charge
+        return {
+          ...prev,
+          selectedSubServices: [...selected, { name: subName, charge: '' }]
+        };
+      }
+    });
+  };
+
+  // Update charge for a sub-service
+  const handleSubServiceChargeChange = (subName, value) => {
+    setProfile(prev => ({
+      ...prev,
+      selectedSubServices: (prev.selectedSubServices || []).map(s =>
+        s.name === subName ? { ...s, charge: value } : s
+      )
     }));
   };
 
@@ -294,7 +332,7 @@ const ProfilePage = () => {
             <div className="form-section">
               <h3>Address</h3>
               <div className="form-group full-width">
-                <label>Street Address</label>
+                <label>Area</label>
                 <input
                   type="text"
                   name="address"
@@ -336,8 +374,7 @@ const ProfilePage = () => {
             {profile.userType === 'jobSeeker' && (
               <>
                 <div className="categories-section">
-                  <h3>House Help Categories</h3>
-                  <p>Select the services you offer:</p>
+                  <h3>Select The Profession</h3>
                   <div className="categories-list">
                     {categories.map(category => (
                       <div 
@@ -350,8 +387,60 @@ const ProfilePage = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  <h3 style={{ marginTop: '20px' }}>Experience Level</h3>
+
+                  <h5 style={{ marginTop: '20px' }}>Select Sub Service</h5>
+                  <div className="sub-services-list" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '15px', alignItems: 'flex-start' }}>
+                    {subServicesList.map(sub => {
+                      const selected = (profile.selectedSubServices || []).find(s => s.name === sub);
+                      return (
+                        <div key={sub} className={`sub-service-box${selected ? ' selected' : ''}`} style={{
+                          background: selected ? '#6c5ce7' : '#f5f5f5',
+                          color: selected ? 'white' : '#333',
+                          border: selected ? '2px solid #5649c0' : '1px solid #ddd',
+                          borderRadius: '8px',
+                          padding: '14px 18px',
+                          fontSize: '15px',
+                          fontWeight: '500',
+                          cursor: 'pointer',
+                          minWidth: '140px',
+                          textAlign: 'center',
+                          boxShadow: '0 2px 6px rgba(0,0,0,0.05)',
+                          position: 'relative',
+                          marginBottom: selected ? '48px' : '0',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          justifyContent: 'flex-start'
+                        }} onClick={() => handleSubServiceToggle(sub)}>
+                          {sub}
+                          {selected && (
+                            <input
+                              type="number"
+                              min="0"
+                              step="any"
+                              placeholder="Charges (₹)"
+                              value={selected.charge}
+                              onClick={e => e.stopPropagation()}
+                              onChange={e => handleSubServiceChargeChange(sub, e.target.value)}
+                              style={{
+                                marginTop: '8px',
+                                width: '90%',
+                                padding: '6px',
+                                borderRadius: '5px',
+                                border: '1px solid #ccc',
+                                fontSize: '14px',
+                                background: '#fff',
+                                color: '#333',
+                                position: 'static'
+                              }}
+                            />
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  <h3 style={{ marginTop: '60px' }}>Experience Level</h3>
                   <div className="experience-levels">
                     {experienceLevels.map(level => (
                       <div 
