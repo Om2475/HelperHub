@@ -3,23 +3,46 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
   
+  /* Modern gradient background for left section */
   .left-section {
     width: 50%;
-    background-color: #4a148c;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Add animated background pattern */
+  .left-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.03) 25%, transparent 50%, rgba(255,255,255,0.03) 75%, transparent 100%);
+    animation: movePattern 20s linear infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes movePattern {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
   }
   
   .animation-container {
     width: 100%;
     max-width: 600px;
-    height: 600px; /* Increased to accommodate larger images */
+    height: 600px;
     position: relative;
+    z-index: 2;
   }
   
   .animation-item {
@@ -32,29 +55,69 @@
     justify-content: center;
     text-align: center;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   
   .animation-item.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   
   .animation-image {
-    width: 500px; /* Increased size */
-    height: 500px; /* Increased size */
+    width: 400px;
+    height: 400px;
     margin-bottom: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.14);
+    transition: all 0.3s ease;
+    object-fit: contain;
+  }
+  
+  .animation-item.active .animation-image {
+    transform: translateY(-5px);
+  }
+
+  /* Illustration wrapper when using inline SVGs */
+  .illustration {
+    width: 420px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent);
   }
   
   .animation-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease 0.2s;
+  }
+  
+  .animation-item.active h3 {
+    transform: translateY(0);
+    opacity: 1;
   }
   
   .animation-item p {
-    font-size: 1.1rem;
-    opacity: 0.9;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease 0.4s;
+    line-height: 1.6;
+  }
+  
+  .animation-item.active p {
+    opacity: 0.95;
+    transform: translateY(0);
   }
   
   .right-section {
@@ -63,40 +126,85 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 3rem 4rem;
+    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+  }
+  
+  /* Add subtle animated background */
+  .right-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(103, 126, 234, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(118, 75, 162, 0.05) 0%, transparent 50%);
+    pointer-events: none;
   }
   
   .logo-container {
     margin-bottom: 3rem;
     text-align: center;
+    z-index: 2;
+    position: relative;
   }
   
   .logo-container h1 {
-    font-size: 3rem;
-    color: #4a148c;
+    font-size: 3.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0.5rem;
+    font-weight: 800;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideInUp 0.8s ease forwards 0.2s;
+  }
+  
+  @keyframes slideInUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   
   .tagline {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1.3rem;
+    color: #6c757d;
+    font-weight: 500;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideInUp 0.8s ease forwards 0.4s;
   }
   
   .user-type-selection {
     width: 100%;
     max-width: 500px;
+    z-index: 2;
+    position: relative;
   }
   
   .user-type-selection h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
+    margin-bottom: 2.5rem;
+    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideInUp 0.8s ease forwards 0.6s;
   }
   
   .button-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideInUp 0.8s ease forwards 0.8s;
   }
   
   .user-type-button {
@@ -104,41 +212,115 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    background-color: white;
-    transition: all 0.3s ease;
+    padding: 2.5rem 2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .user-type-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s ease;
+  }
+  
+  .user-type-button:hover::before {
+    left: 100%;
   }
   
   .user-type-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    border-color: #667eea;
+  }
+  
+  .user-type-button:active {
+    transform: translateY(-4px) scale(1.01);
   }
   
   .employer-button:hover {
-    border-color: #4a148c;
+    background: linear-gradient(145deg, #f0f4ff 0%, #e0e7ff 100%);
+    border-color: #667eea;
   }
   
   .job-seeker-button:hover {
-    border-color: #6a1b9a;
+    background: linear-gradient(145deg, #f5f0ff 0%, #ede9fe 100%);
+    border-color: #764ba2;
   }
   
   .user-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-type-button:hover .user-icon {
+    transform: scale(1.1) rotate(5deg);
   }
   
   .user-type-button span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #2d3748;
+    transition: color 0.3s ease;
+  }
+  
+  .user-type-button:hover span {
+    color: #4c51bf;
   }
   
   .button-description {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.1rem;
+    color: #718096;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+  
+  .user-type-button:hover .button-description {
+    color: #4a5568;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .landing-container {
+      flex-direction: column;
+    }
+    
+    .left-section, .right-section {
+      width: 100%;
+      height: 50vh;
+      padding: 1.5rem;
+    }
+    
+    .animation-image {
+      width: 280px;
+      height: 280px;
+    }
+    
+    .logo-container h1 {
+      font-size: 2.5rem;
+    }
+    
+    .user-type-button {
+      padding: 2rem 1.5rem;
+    }
+    
+    .user-icon {
+      font-size: 2.5rem;
+    }
+    
+    .user-type-button span {
+      font-size: 1.4rem;
+    }
   }
   
