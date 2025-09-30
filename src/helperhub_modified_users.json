@@ -1,0 +1,3479 @@
+{
+  "users": {
+    "user1": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Thorat",
+        "phone": "9898135810",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "365",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "476",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "15788",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user10": {
+      "profile": {
+        "area": "Koregaon Park",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin Shinde",
+        "phone": "8084388001",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "305",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "524",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12772",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411001"
+      }
+    },
+    "user100": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Thorat",
+        "phone": "8917384598",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "420",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "544",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "4892",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user101": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Kulkarni",
+        "phone": "9508609629",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "292",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "539",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2403",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5422",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user102": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Shinde",
+        "phone": "7699432214",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "400",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "480",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "14088",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2604",
+            "name": "Diwali Lighting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user103": {
+      "profile": {
+        "area": "Koregaon Park",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna Gaikwad",
+        "phone": "9361798683",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "349",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "508",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12269",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2760",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5324",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411001"
+      }
+    },
+    "user104": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer More",
+        "phone": "8402282102",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "344",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "514",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12382",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user105": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Kulkarni",
+        "phone": "7993184876",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "4973",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user106": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Jadhav",
+        "phone": "8552512904",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "288",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "480",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10330",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2739",
+            "name": "Diwali Lighting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user107": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna More",
+        "phone": "9052577834",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "328",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "10665",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "5256",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user108": {
+      "profile": {
+        "area": "Koregaon Park",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna Shinde",
+        "phone": "9640072971",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "390",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "500",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10072",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2687",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5260",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411001"
+      }
+    },
+    "user109": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer More",
+        "phone": "8320736991",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2174",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "389",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "973",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user11": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Jadhav",
+        "phone": "7245725318",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "370",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "511",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10131",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user110": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit More",
+        "phone": "7540737611",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "372",
+            "name": "MCB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user111": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Shinde",
+        "phone": "9612982200",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "1873",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "314",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "979",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user112": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "ramesh@gmail.com",
+        "name": "Ramesh Deshmukh",
+        "phone": "8745957268",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2107",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "375",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1059",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user113": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Kulkarni",
+        "phone": "7442140937",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "1989",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "399",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "930",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user114": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Deshmukh",
+        "phone": "9817967892",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2176",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "325",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1090",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user115": {
+      "profile": {
+        "area": "Hadapsar",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Gaikwad",
+        "phone": "9661354719",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2200",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "991",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411028"
+      }
+    },
+    "user116": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Kulkarni",
+        "phone": "7781602017",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2185",
+            "name": "DB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user117": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Gaikwad",
+        "phone": "8599788097",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "365",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1027",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user118": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Kulkarni",
+        "phone": "8406163334",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "1850",
+            "name": "DB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user119": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Chavan",
+        "phone": "8870779038",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2057",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "1074",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user12": {
+      "profile": {
+        "area": "Hadapsar",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Deshmukh",
+        "phone": "7605124252",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "351",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "443",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411028"
+      }
+    },
+    "user120": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Kulkarni",
+        "phone": "9679203744",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2089",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "1061",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user13": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Jadhav",
+        "phone": "7562829875",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "10779",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user14": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Chavan",
+        "phone": "9716644751",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "324",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "14280",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user15": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna Jadhav",
+        "phone": "8613225868",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "328",
+            "name": "Fan Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user16": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Kulkarni",
+        "phone": "9780637427",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "356",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "405",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12369",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user17": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Kulkarni",
+        "phone": "9883171384",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "417",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "402",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11200",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user18": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Gaikwad",
+        "phone": "9420946787",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "10516",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user19": {
+      "profile": {
+        "area": "Dhayari",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin Thorat",
+        "phone": "7401471057",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "455",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11456",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user2": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Jadhav",
+        "phone": "9543408780",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "321",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "486",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "13301",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user20": {
+      "profile": {
+        "area": "Vadgaon",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Jadhav",
+        "phone": "8180601898",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "329",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "545",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "14259",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user21": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Jadhav",
+        "phone": "9501339238",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "293",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "468",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12346",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user22": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Deshmukh",
+        "phone": "7848510872",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "467",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11665",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user23": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Patil",
+        "phone": "9518916668",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "367",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "12098",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user24": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Patil",
+        "phone": "8979380738",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "386",
+            "name": "Fan Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user25": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Chavan",
+        "phone": "9124725966",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "10064",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user26": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Kulkarni",
+        "phone": "9406552799",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "408",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "535",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "15378",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user27": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Shinde",
+        "phone": "7324864371",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "388",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "413",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10706",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user28": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Kulkarni",
+        "phone": "8035584327",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "363",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "13691",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user29": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna Gaikwad",
+        "phone": "9742932456",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "371",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "11287",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user3": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "ramesh@gmail.com",
+        "name": "Ramesh Patil",
+        "phone": "8889883752",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "389",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "10912",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user30": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Thorat",
+        "phone": "9497296562",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "384",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "508",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10815",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user31": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Jadhav",
+        "phone": "8222663647",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "539",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10189",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user32": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Shinde",
+        "phone": "7697474642",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "327",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "450",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user33": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Chavan",
+        "phone": "8394287341",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "375",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "14394",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user34": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh More",
+        "phone": "9232108769",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "538",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user35": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Kulkarni",
+        "phone": "9553502141",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "348",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "518",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user36": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit More",
+        "phone": "8169578572",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "383",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "401",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12098",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user37": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Thorat",
+        "phone": "9246917785",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "285",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "503",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "14652",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user38": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin Shinde",
+        "phone": "9107050724",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user39": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Gaikwad",
+        "phone": "9621845330",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "412",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "467",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "13704",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user4": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Chavan",
+        "phone": "9194808431",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "373",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "409",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "13523",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user40": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Chavan",
+        "phone": "7439494411",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "295",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "408",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user41": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Chavan",
+        "phone": "7688819550",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "284",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "418",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user42": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "ramesh@gmail.com",
+        "name": "Ramesh Patil",
+        "phone": "8265569128",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "339",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "464",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12173",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user43": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Kulkarni",
+        "phone": "9920580861",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "397",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "401",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "14933",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user44": {
+      "profile": {
+        "area": "Vadgaon",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Chavan",
+        "phone": "9858724213",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "382",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "532",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "10981",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user45": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Shinde",
+        "phone": "9794279901",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "356",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "494",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user46": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh More",
+        "phone": "9886522490",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "289",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "443",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11624",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user47": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Gaikwad",
+        "phone": "7288932469",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user48": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Patil",
+        "phone": "7489776358",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "330",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "544",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11939",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user49": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Shinde",
+        "phone": "8428705553",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "323",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "15147",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user5": {
+      "profile": {
+        "area": "Vadgaon",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Patil",
+        "phone": "8255689582",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "402",
+            "name": "Fan Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user50": {
+      "profile": {
+        "area": "Hadapsar",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Jadhav",
+        "phone": "7175608584",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "409",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "12934",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411028"
+      }
+    },
+    "user51": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "ramesh@gmail.com",
+        "name": "Ramesh Gaikwad",
+        "phone": "7968850698",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "311",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "438",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user52": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin More",
+        "phone": "9358886249",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "389",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "536",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11448",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user53": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Jadhav",
+        "phone": "7946541524",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "388",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "15700",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user54": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna Kulkarni",
+        "phone": "7089157929",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "359",
+            "name": "Fan Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user55": {
+      "profile": {
+        "area": "Dhayari",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Gaikwad",
+        "phone": "8596296464",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "355",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "14252",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user56": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Deshmukh",
+        "phone": "7483629442",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "367",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "525",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user57": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Chavan",
+        "phone": "8825608971",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "12961",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user58": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak More",
+        "phone": "8581597051",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "492",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user59": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Gaikwad",
+        "phone": "8468128962",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "519",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12747",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user6": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin Kulkarni",
+        "phone": "7554346191",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "404",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "14878",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user60": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Thorat",
+        "phone": "7272653134",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "455",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "13635",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user61": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Gaikwad",
+        "phone": "7873376303",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "515",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "327",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1093",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user62": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna More",
+        "phone": "8557579589",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "394",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "473",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2003",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "1065",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user63": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay More",
+        "phone": "8824218543",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "293",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "464",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "1981",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "337",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "981",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "15941",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user64": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Gaikwad",
+        "phone": "9688607243",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "349",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "2028",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "368",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "900",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "12759",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user65": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Kulkarni",
+        "phone": "9215046947",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "354",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "421",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "1946",
+            "name": "DB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user66": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Kulkarni",
+        "phone": "9158183530",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "406",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "486",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "320",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "15122",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user67": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Patil",
+        "phone": "8673062769",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "282",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "539",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2033",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "1014",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "11931",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user68": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Kulkarni",
+        "phone": "7232257835",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "417",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "332",
+            "name": "MCB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user69": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Patil",
+        "phone": "7411946966",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "2166",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "348",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1076",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user7": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Shinde",
+        "phone": "8113007788",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "461",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "13918",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user70": {
+      "profile": {
+        "area": "Koregaon Park",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Chavan",
+        "phone": "7975973189",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "386",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "441",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2114",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "15407",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411001"
+      }
+    },
+    "user71": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Patil",
+        "phone": "8948428482",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "389",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "926",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user72": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Chavan",
+        "phone": "9595313377",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "433",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2082",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "11075",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user73": {
+      "profile": {
+        "area": "Hadapsar",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Gaikwad",
+        "phone": "7650372507",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "328",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "314",
+            "name": "MCB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411028"
+      }
+    },
+    "user74": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Kulkarni",
+        "phone": "9083272042",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "415",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "463",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "1974",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "394",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1077",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "13196",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user75": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Chavan",
+        "phone": "9693811409",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "336",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "395",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1044",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "11398",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user76": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Shinde",
+        "phone": "8504284965",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "545",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "357",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1063",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "13935",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user77": {
+      "profile": {
+        "area": "Kondhwa",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Thorat",
+        "phone": "7655965008",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "368",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "2104",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "355",
+            "name": "MCB Install (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411048"
+      }
+    },
+    "user78": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Jadhav",
+        "phone": "8627634063",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "331",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "462",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "358",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "13050",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user79": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Deshmukh",
+        "phone": "7676005654",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "391",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1090",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user8": {
+      "profile": {
+        "area": "Shivajinagar",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit More",
+        "phone": "8117430263",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "409",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "469",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411005"
+      }
+    },
+    "user80": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "krishna@gmail.com",
+        "name": "Krishna Kulkarni",
+        "phone": "7655477300",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "406",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "511",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "378",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "13267",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user81": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Patil",
+        "phone": "8679470526",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "527",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "1962",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "363",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "926",
+            "name": "CCTV Fitting (₹)"
+          },
+          {
+            "charge": "10798",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user82": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "deepak@gmail.com",
+        "name": "Deepak Deshmukh",
+        "phone": "8579248254",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "496",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user83": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Patil",
+        "phone": "8007442853",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "462",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11394",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user84": {
+      "profile": {
+        "area": "Hinjewadi",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Gaikwad",
+        "phone": "9138219323",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "379",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "433",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2140",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "15150",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411057"
+      }
+    },
+    "user85": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin Kulkarni",
+        "phone": "8979187498",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "360",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "510",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "1941",
+            "name": "DB Install (₹)"
+          },
+          {
+            "charge": "11053",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user86": {
+      "profile": {
+        "area": "Koregaon Park",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Patil",
+        "phone": "8691105787",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "515",
+            "name": "Switch Board (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411001"
+      }
+    },
+    "user87": {
+      "profile": {
+        "area": "Swargate",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Patil",
+        "phone": "7242065692",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "477",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "350",
+            "name": "MCB Install (₹)"
+          },
+          {
+            "charge": "1042",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411042"
+      }
+    },
+    "user88": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Thorat",
+        "phone": "7572764277",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "405",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "936",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user89": {
+      "profile": {
+        "area": "Vadgaon",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Jadhav",
+        "phone": "7968893741",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "494",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "12744",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user9": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "vijay@gmail.com",
+        "name": "Vijay Thorat",
+        "phone": "8330414839",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "335",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "420",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "15017",
+            "name": "Full House Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user90": {
+      "profile": {
+        "area": "Pimpri-Chinchwad",
+        "city": "Pune",
+        "email": "ramesh@gmail.com",
+        "name": "Ramesh Patil",
+        "phone": "7978236906",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "285",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "460",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "1025",
+            "name": "CCTV Fitting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411044"
+      }
+    },
+    "user91": {
+      "profile": {
+        "area": "Dhayari",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Patil",
+        "phone": "8015152788",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "318",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "2353",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "4883",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user92": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "sameer@gmail.com",
+        "name": "Sameer Jadhav",
+        "phone": "7220609053",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "294",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "14783",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2344",
+            "name": "Diwali Lighting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user93": {
+      "profile": {
+        "area": "Katraj",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil Jadhav",
+        "phone": "8353708649",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "370",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "2398",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5020",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user94": {
+      "profile": {
+        "area": "Karvenagar",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin More",
+        "phone": "8077398944",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "284",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "15272",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2565",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5292",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411052"
+      }
+    },
+    "user95": {
+      "profile": {
+        "area": "Dhayari",
+        "city": "Pune",
+        "email": "sunil@gmail.com",
+        "name": "Sunil More",
+        "phone": "9395112487",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "387",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "485",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "11051",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "4891",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411041"
+      }
+    },
+    "user96": {
+      "profile": {
+        "area": "Kothrud",
+        "city": "Pune",
+        "email": "nitin@gmail.com",
+        "name": "Nitin Kulkarni",
+        "phone": "7117102897",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "402",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "2327",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5302",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411038"
+      }
+    },
+    "user97": {
+      "profile": {
+        "area": "Ambegaon",
+        "city": "Pune",
+        "email": "ajay@gmail.com",
+        "name": "Ajay Patil",
+        "phone": "8827707949",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "280",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "15793",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2682",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5008",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "user98": {
+      "profile": {
+        "area": "Koregaon Park",
+        "city": "Pune",
+        "email": "suresh@gmail.com",
+        "name": "Suresh Kulkarni",
+        "phone": "7459479975",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "524",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "2630",
+            "name": "Diwali Lighting (₹)"
+          },
+          {
+            "charge": "5125",
+            "name": "Ganesh Pandal Wiring (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411001"
+      }
+    },
+    "user99": {
+      "profile": {
+        "area": "Hadapsar",
+        "city": "Pune",
+        "email": "rohit@gmail.com",
+        "name": "Rohit Kulkarni",
+        "phone": "7324115085",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "411",
+            "name": "Fan Install (₹)"
+          },
+          {
+            "charge": "535",
+            "name": "Switch Board (₹)"
+          },
+          {
+            "charge": "14835",
+            "name": "Full House Wiring (₹)"
+          },
+          {
+            "charge": "2312",
+            "name": "Diwali Lighting (₹)"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-29T10:09:14.601Z",
+        "userType": "jobSeeker",
+        "zip": "411028"
+      }
+    },
+    "HhNGtroNplU2fhLrncMgdQHU1mT2": {
+      "createdAt": "2025-09-30T05:55:06.045Z",
+      "email": "b@gmail.com",
+      "name": "b a",
+      "phone": "5451656579",
+      "userType": "jobSeeker",
+      "profile": {
+        "address": "KATRAJ",
+        "bio": "",
+        "city": "PUNE ",
+        "email": "b@gmail.com",
+        "experienceLevel": "beginner",
+        "firstName": "b",
+        "lastName": "a",
+        "phone": "1868813466",
+        "profileImage": "",
+        "selectedCategories": [
+          "electrician"
+        ],
+        "selectedSubServices": [
+          {
+            "charge": "450",
+            "name": "Fan Install"
+          },
+          {
+            "charge": "301",
+            "name": "Switch Board"
+          }
+        ],
+        "state": "Maharashtra",
+        "updatedAt": "2025-09-30T05:56:48.811Z",
+        "userType": "jobSeeker",
+        "zip": "411046"
+      }
+    },
+    "vcKt3Ld2aFcbgcjJ9ql3YuP3wQI3": {
+      "createdAt": "2025-09-30T05:45:59.058Z",
+      "email": "a@gmail.com",
+      "name": "a ba123",
+      "phone": "3828472939",
+      "userType": "employer"
+    },
+    "HjEwFgxVMjT30XweNvzW8uNqHrh2": {
+      "createdAt": "2025-09-29T18:32:48.430Z",
+      "email": "sgdfgd@gmail.com",
+      "name": "dgdfgsd",
+      "phone": "1234567890",
+      "userType": "jobSeeker"
+    }
+  }
+}
