@@ -19,6 +19,7 @@ const ServiceProvidersPage = () => {
   const [userType, setUserType] = useState('');
   const [requestSent, setRequestSent] = useState({});
   const [requestLoading, setRequestLoading] = useState({});
+  const [requestDisabled, setRequestDisabled] = useState({});
   // Employer-side form state
   const [selectedProfession, setSelectedProfession] = useState('electrician');
   const subServicesList = [
@@ -109,6 +110,24 @@ const ServiceProvidersPage = () => {
           }
 
           setProviders(providersData);
+
+          // Check for existing requests to disable buttons
+          const currentUser = auth.currentUser;
+          if (currentUser) {
+            const requestsRef = ref(db, 'requests');
+            const requestsSnapshot = await get(requestsRef);
+            if (requestsSnapshot.exists()) {
+              const requestsData = requestsSnapshot.val();
+              const disabledMap = {};
+              for (const reqId in requestsData) {
+                const req = requestsData[reqId];
+                if (req.employerId === currentUser.uid) {
+                  disabledMap[req.jobSeekerId] = true;
+                }
+              }
+              setRequestDisabled(disabledMap);
+            }
+          }
         } else {
           console.log("No service providers found");
           setProviders([]);
@@ -161,18 +180,16 @@ const ServiceProvidersPage = () => {
         employerEmail: employerProfile.email,
         employerPhone: employerProfile.phone,
         jobSeekerName: `${provider.firstName} ${provider.lastName}`,
+        jobSeekerEmail: provider.email,
+        jobSeekerPhone: provider.phone,
         jobSeekerCategories: provider.selectedCategories,
         status: 'pending',
         createdAt: new Date().toISOString()
       });
       
-      // Show success message
+      // Show success message and disable button
       setRequestSent(prev => ({ ...prev, [provider.id]: true }));
-      
-      // Reset after 3 seconds
-      setTimeout(() => {
-        setRequestSent(prev => ({ ...prev, [provider.id]: false }));
-      }, 3000);
+      setRequestDisabled(prev => ({ ...prev, [provider.id]: true }));
       
     } catch (error) {
       console.error("Error sending request:", error);
@@ -236,13 +253,17 @@ const ServiceProvidersPage = () => {
 
   // Filtering logic for employer side
   const handleEmployerApply = () => {
+    if (selectedSubServices.length === 0) {
+      alert("Please select at least one sub service.");
+      return;
+    }
     setIsBuffering(true);
     setTimeout(() => {
       // Filter job seekers by selected category, sub-services and area
       const filtered = providers.filter(provider => {
         const matchesCategory = selectedCategory === 'all' || (provider.selectedCategories && provider.selectedCategories.includes(selectedCategory));
         const matchesSubService = selectedSubServices.length === 0 || (provider.selectedSubServices && selectedSubServices.every(sub => provider.selectedSubServices.some(pss => pss.name.replace(' (₹)', '') === sub)));
-        const matchesArea = !location || (provider.area && provider.area.toLowerCase().includes(location.toLowerCase()));
+        const matchesArea = !location || ((provider.area && provider.area.toLowerCase().includes(location.toLowerCase())) || (provider.address && provider.address.toLowerCase().includes(location.toLowerCase())));
         return matchesCategory && matchesSubService && matchesArea;
       });
       setFilteredEmployerProviders(filtered);
@@ -390,7 +411,7 @@ const ServiceProvidersPage = () => {
                       ))}
                     </div>
                     <div className="provider-role">{provider.role}</div>
-                    <div className="provider-area">Area: {provider.area || 'N/A'}</div>
+                    <div className="provider-area">Area: {provider.area || provider.address || 'N/A'}</div>
                   </div>
                 </div>
                 <div className="provider-bio">{provider.bio}</div>
@@ -437,8 +458,12 @@ const ServiceProvidersPage = () => {
                   >
                     View Profile
                   </button>
-                  <button className="contact-button" onClick={() => handleSendRequest(provider)}>
-                    <FaPaperPlane /> {requestSent[provider.id] ? 'Request Sent!' : 'Send Request'}
+                  <button
+                    className="contact-button"
+                    onClick={() => handleSendRequest(provider)}
+                    disabled={requestDisabled[provider.id] || requestLoading[provider.id]}
+                  >
+                    <FaPaperPlane /> {requestDisabled[provider.id] ? 'Request Sent' : requestLoading[provider.id] ? 'Sending...' : 'Send Request'}
                   </button>
                 </div>
               </div>
@@ -482,8 +507,6 @@ const ServiceProvidersPage = () => {
           >
             <h2>Service Provider Details</h2>
             <p><strong>Name:</strong> {selectedProvider.name ? selectedProvider.name : `${selectedProvider.firstName || ''} ${selectedProvider.lastName || ''}`.trim()}</p>
-            <p><strong>Email:</strong> {selectedProvider.email || 'N/A'}</p>
-            <p><strong>Mobile Number:</strong> {selectedProvider.phone || 'N/A'}</p>
             <h3>Service Charges:</h3>
             <ul>
               {selectedProvider.selectedSubServices && selectedProvider.selectedSubServices.map((service, index) => (

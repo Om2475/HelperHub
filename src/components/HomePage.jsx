@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { getDatabase, ref, get, query, orderByChild, equalTo } from 'firebase/database';
+import { getDatabase, ref, get, update, remove } from 'firebase/database';
 import UserProfile from './UserProfile';
 import '../styles/HomePage.css';
 
@@ -14,12 +14,11 @@ const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [requests, setRequests] = useState([]);
   const [sentRequests, setSentRequests] = useState([]);
-  
+  const auth = getAuth();
+
   // Images for the changing banner
   const bannerImages = [
-    '/images/poster1.jpg',
-    '/images/poster2.jpg',
-    '/images/poster3.jpg'
+    '/images/h-co-3coKbdfnAFg-unsplash.jpg'
   ];
 
   // Placeholder data for team members
@@ -96,27 +95,44 @@ const HomePage = () => {
     try {
       const db = getDatabase();
       const requestsRef = ref(db, 'requests');
-      
+
       // Get all requests
       const snapshot = await get(requestsRef);
-      
+
       if (snapshot.exists()) {
         const allRequests = [];
-        
+        const childSnapshots = [];
+
         snapshot.forEach((childSnapshot) => {
+          childSnapshots.push(childSnapshot);
+        });
+
+        for (const childSnapshot of childSnapshots) {
           const request = {
             id: childSnapshot.key,
             ...childSnapshot.val()
           };
-          
+
           // Filter requests based on user type
           if (type === 'jobSeeker' && request.jobSeekerId === userId) {
             allRequests.push(request);
           } else if (type === 'employer' && request.employerId === userId) {
+            // For employers, fetch job seeker profile to get contact info
+            try {
+              const jobSeekerProfileRef = ref(db, `users/jobSeeker/${request.jobSeekerId}/profile`);
+              const profileSnapshot = await get(jobSeekerProfileRef);
+              if (profileSnapshot.exists()) {
+                const profile = profileSnapshot.val();
+                request.jobSeekerEmail = profile.email;
+                request.jobSeekerPhone = profile.phone;
+              }
+            } catch (profileError) {
+              console.error("Error fetching job seeker profile:", profileError);
+            }
             allRequests.push(request);
           }
-        });
-        
+        }
+
         if (type === 'jobSeeker') {
           setRequests(allRequests);
         } else {
@@ -133,28 +149,8 @@ const HomePage = () => {
   const handleServiceClick = (serviceType) => {
     // Handle click on service cards
     if (userType === 'jobSeeker') {
-      // Check if the user has already completed their profile
-      const auth = getAuth();
-      const db = getDatabase();
-      const userId = auth.currentUser.uid;
-      const userProfileRef = ref(db, `users/${userId}/profile`);
-      
-      get(userProfileRef).then((snapshot) => {
-        if (snapshot.exists() && 
-            snapshot.val().firstName && 
-            snapshot.val().lastName && 
-            snapshot.val().phone) {
-          // Profile is complete, navigate to service providers page
-          navigate(`/service-providers/${serviceType}`);
-        } else {
-          // Profile is incomplete, navigate to profile page
-          navigate(`/service/${serviceType}`);
-        }
-      }).catch((error) => {
-        console.error("Error checking profile:", error);
-        // Default to profile page if there's an error
-        navigate(`/service/${serviceType}`);
-      });
+      // Always navigate to profile page for job seekers on Apply button click
+      navigate(`/service/${serviceType}`);
     } else {
       // For employers, show the service providers directly
       navigate(`/service-providers/${serviceType}`);
@@ -165,6 +161,51 @@ const HomePage = () => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+
+  // Handle accept request
+  const handleAcceptRequest = async (requestId) => {
+    try {
+      const db = getDatabase();
+      const requestRef = ref(db, `requests/${requestId}`);
+      await update(requestRef, { status: 'accepted' });
+      // Refresh requests
+      fetchRequests(auth.currentUser.uid, userType);
+    } catch (error) {
+      console.error("Error accepting request:", error);
+      alert("Failed to accept request. Please try again.");
+    }
+  };
+
+  // Handle decline request
+  const handleDeclineRequest = async (requestId) => {
+    try {
+      const db = getDatabase();
+      const requestRef = ref(db, `requests/${requestId}`);
+      await update(requestRef, { status: 'declined' });
+      // Refresh requests
+      fetchRequests(auth.currentUser.uid, userType);
+    } catch (error) {
+      console.error("Error declining request:", error);
+      alert("Failed to decline request. Please try again.");
+    }
+  };
+
+  // Handle delete request
+  const handleDeleteRequest = async (requestId) => {
+    if (!window.confirm("Are you sure you want to delete this request?")) {
+      return;
+    }
+    try {
+      const db = getDatabase();
+      const requestRef = ref(db, `requests/${requestId}`);
+      await remove(requestRef);
+      // Refresh requests
+      fetchRequests(auth.currentUser.uid, userType);
+    } catch (error) {
+      console.error("Error deleting request:", error);
+      alert("Failed to delete request. Please try again.");
+    }
   };
 
   if (isLoading) {
@@ -221,7 +262,7 @@ const HomePage = () => {
           <div className="service-cards">
             <div className="service-card" onClick={() => handleServiceClick('short-term')}>
               <div className="card-image">
-                <img src="/images/short-term.jpg" alt="Short Term Service" />
+                <img src="/images/short term service.jpg" alt="Short Term Service" />
               </div>
               <h3>Short Term Service</h3>
               <button className="apply-button">Apply</button>
@@ -243,18 +284,34 @@ const HomePage = () => {
                       <div key={request.id} className="request-card">
                         <div className="request-header">
                           <h3>Request from {request.employerName}</h3>
-                          <span className={`request-status ${request.status}`}>{request.status}</span>
+                          <span className={`request-status ${request.status}`}>
+                            {request.status === 'accepted' ? 'Accepted' :
+                             request.status === 'declined' ? 'Declined' :
+                             request.status}
+                          </span>
                         </div>
                         <div className="request-details">
-                          <p><strong>Service:</strong> {request.serviceType === 'house' ? 'House Service' : 
-                                                     request.serviceType === 'short-term' ? 'Short Term Service' : 
+                          <p><strong>Service:</strong> {request.serviceType === 'house' ? 'House Service' :
+                                                     request.serviceType === 'short-term' ? 'Short Term Service' :
                                                      'Business Service'}</p>
                           <p><strong>Contact:</strong> {request.employerEmail} | {request.employerPhone}</p>
+                          {request.status === 'accepted' && (
+                            <p className="info-message">Employer will shortly contact you.</p>
+                          )}
                           <p><strong>Date:</strong> {formatDate(request.createdAt)}</p>
                         </div>
                         <div className="request-actions">
-                          <button className="accept-button">Accept</button>
-                          <button className="decline-button">Decline</button>
+                          {request.status === 'accepted' ? (
+                            <p>Request accepted</p>
+                          ) : request.status === 'declined' ? (
+                            <p>Request rejected</p>
+                          ) : (
+                            <>
+                              <button className="accept-button" onClick={() => handleAcceptRequest(request.id)}>Accept</button>
+                              <button className="decline-button" onClick={() => handleDeclineRequest(request.id)}>Decline</button>
+                            </>
+                          )}
+                          <button className="delete-button" onClick={() => handleDeleteRequest(request.id)}>Delete</button>
                         </div>
                       </div>
                     ))}
@@ -270,13 +327,26 @@ const HomePage = () => {
                       <div key={request.id} className="request-card">
                         <div className="request-header">
                           <h3>Request to {request.jobSeekerName}</h3>
-                          <span className={`request-status ${request.status}`}>{request.status}</span>
+                          <span className={`request-status ${request.status}`}>
+                            {request.status === 'accepted' ? 'Accepted' :
+                             request.status === 'declined' ? 'Declined' :
+                             request.status}
+                          </span>
                         </div>
                         <div className="request-details">
-                          <p><strong>Service:</strong> {request.serviceType === 'house' ? 'House Service' : 
-                                                    request.serviceType === 'short-term' ? 'Short Term Service' : 
+                          <p><strong>Service:</strong> {request.serviceType === 'house' ? 'House Service' :
+                                                    request.serviceType === 'short-term' ? 'Short Term Service' :
                                                     'Business Service'}</p>
+                          <p><strong>Contact:</strong> {request.status === 'accepted' ? `${request.jobSeekerEmail || request.jobSeekerProfile?.email || 'N/A'} | ${request.jobSeekerPhone || request.jobSeekerProfile?.phone || 'N/A'}` :
+                                                   request.status === 'declined' ? 'Not available' :
+                                                   'Pending'}</p>
+                          {request.status === 'accepted' && (
+                            <p className="info-message">Contact information is been displayed, please contact person.</p>
+                          )}
                           <p><strong>Date:</strong> {formatDate(request.createdAt)}</p>
+                        </div>
+                        <div className="request-actions">
+                          <button className="delete-button" onClick={() => handleDeleteRequest(request.id)}>Delete</button>
                         </div>
                       </div>
                     ))}

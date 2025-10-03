@@ -79,19 +79,32 @@ const ProfilePage = () => {
     try {
       const userProfileRef = dbRef(database, `users/${userId}/profile`);
       const snapshot = await get(userProfileRef);
-      
+
+      let profileData = {};
       if (snapshot.exists()) {
         console.log("Profile data found:", snapshot.val());
-        const profileData = snapshot.val();
-        setProfile((prev) => ({
-          ...prev,
-          ...profileData,
-          selectedCategories: profileData.selectedCategories || [],
-          experienceLevel: profileData.experienceLevel || ''
-        }));
+        profileData = snapshot.val();
       } else {
         console.log("No existing profile found for this user");
       }
+
+      // If phone is not in profile, try to fetch from signup data
+      if (!profileData.phone) {
+        const userType = profileData.userType || 'jobSeeker'; // Assume jobSeeker if not set
+        const signupRef = dbRef(database, `users/${userType}/${userId}`);
+        const signupSnapshot = await get(signupRef);
+        if (signupSnapshot.exists()) {
+          const signupData = signupSnapshot.val();
+          profileData.phone = signupData.phone || '';
+        }
+      }
+
+      setProfile((prev) => ({
+        ...prev,
+        ...profileData,
+        selectedCategories: profileData.selectedCategories || [],
+        experienceLevel: profileData.experienceLevel || ''
+      }));
     } catch (error) {
       console.error("Error fetching user profile:", error);
       setError("Failed to load profile. Please try again.");
